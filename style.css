@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Outfit&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --letter-spacing: 0.1rem;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+.bloc h1 {
+  font-family: 'Allura', cursive;
+  text-align: center;
+  margin-block: 5rem;
+  font-size: 3rem;
+  color: rgb(196, 154, 99);
+}
+
+.cards {
+  width: 90vw;
+  max-width: 700px;
+  display: grid;
+  margin: 0rem auto 5rem auto;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card .text {
+  padding: 1rem 0.5rem;
+  display: grid;
+  justify-items: end;
+  grid-template-columns: auto 1fr;
+}
+
+.card .text p {
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.card .text button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.btn-quest i {
+  border-radius: 0.5rem;
+  padding: 2px;
+  font-size: 1.2rem;
+  color: rgb(196, 154, 99);
+  border: 3px solid rgb(196, 154, 99);
+  transition: all 0.3s;
+}
+
+.fa-plus:hover {
+  transform: rotate(90deg);
+}
+
+.fa-minus {
+  transform: rotate(90deg);
+}
+
+.btn-quest .fa-minus {
+  display: none;
+}
+
+.open-text .fa-plus {
+  display: none;
+}
+.open-text .fa-minus {
+  display: block;
+}
+
+.question {
+  display: none;
+  padding: 1rem 0.5rem;
+  border-top: 1px solid rgb(143, 143, 143);
+}
+
+.open-text .question {
+  display: block;
+}
+
+.card .question p {
+  color: rgb(143, 143, 143);
+}
